@@ -75,41 +75,44 @@ A robust and scalable Notes Management API that allows users to create, update, 
 To run unit tests:
 ```bash
 npm run test:unit
+```
+## End Points 
 
-
-## End Points
-Create Note
+-**Create Note**
 
     Endpoint: POST /api/v1/notes
     Fields:
         title (string, required)
         content (string, required)
-        description (string, optional)
+        description (string, required)
 
-Get All Notes
+-**Get All Notes**
 
     Endpoint: GET /api/v1/notes
     Query Parameters:
         page (number, optional, default: 1)
         limit (number, optional, default: 10)
 
-Get Note by ID
+-**Get Note by ID**
 
     Endpoint: GET /api/v1/notes/:noteId
 
-Update Note
+-**Update Note**
 
-    Endpoint: PATCH /api/v1/notes/:noteId
+    Endpoint: PATCH /api/v1/notes/
     Fields: (Partial updates allowed)
+        id (noteId , required)
         title (string, optional)
         content (string, optional)
         description (string, optional)
 
-Delete Note
+-**Delete Note**
 
-    Endpoint: DELETE /api/v1/notes/:noteId
+    Endpoint: DELETE /api/v1/notes/
+    Feilds :
+        id (noteId, required)
 
-Search Notes
+-**Search Notes**
 
     Endpoint: GET /api/v1/notes/search
     Query Parameters:
@@ -117,8 +120,11 @@ Search Notes
         page (number, optional, default: 1)
         limit (number, optional, default: 10)
 
-Share Note
+-**Share Note**
 
     Endpoint: POST /api/v1/notes/:noteId/share
     Fields:
         sharedWith (array of user IDs, required)
+
+
+
