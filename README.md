@@ -83,7 +83,7 @@ npm run test:unit
 ```
 
 
-### Live 
+### Postman Collection 
 - Import Notes API.postman_collection.json into Postman to see endpoints in action.
 
 ---
