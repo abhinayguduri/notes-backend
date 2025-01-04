@@ -31,6 +31,10 @@ A robust and scalable Notes Management API that allows users to create, update, 
 - **Jest**: Testing framework for unit tests.
 
 ---
+### Live 
+- The Api Will be accessible at `https://notes-backend-mzsw.onrender.com/` this is hosted on free plan might go to standby wait for 2 minutes after 1st hit..
+
+---
 
 ## Prerequisites
 - **Node.js** (v16+)
@@ -66,6 +70,7 @@ A robust and scalable Notes Management API that allows users to create, update, 
 5. Access the API:
    - The API will be accessible at `http://localhost:3000` by default.
    - Replace `localhost` with your server's domain or IP if deployed remotely.
+   
 
 ---
 
@@ -76,6 +81,12 @@ To run unit tests:
 ```bash
 npm run test:unit
 ```
+
+
+### Live 
+- Import Notes API.postman_collection.json into Postman to see endpoints in action.
+
+---
 ## End Points 
 -**Signup**
 
