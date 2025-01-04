@@ -25,7 +25,7 @@ A robust and scalable Notes Management API that allows users to create, update, 
 - **jsonwebtoken**: For secure user authentication.
 - **express-validator**: For robust request validation.
 - **dotenv**: For managing environment variables.
--**express-rate-limit**:For rate limiting
+- **express-rate-limit**: For rate limiting
 
 ### Testing
 - **Jest**: Testing framework for unit tests.
@@ -92,7 +92,7 @@ npm run test:unit
     Fields:
         email (string, required)
         password(string, required)
-        
+
 -**Create Note**
 
     Endpoint: POST /api/v1/notes
