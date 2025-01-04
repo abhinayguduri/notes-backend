@@ -17,7 +17,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstname\":\"Abhinay\",\r\n    \"lastname\":\"Guduri\",\r\n    \"email\":\"guduriabhinay@gmail.com\",\r\n    \"password\":\"Aa@123456\"\r\n}",
+							"raw": "{\r\n    \"firstname\":\"Abhinay\",\r\n    \"lastname\":\"Guduri\",\r\n    \"email\":\"guduriabhinay2@gmail.com\",\r\n    \"password\":\"Aa@123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -83,7 +83,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAxMzI4MCwiZXhwIjoxNzM2MDE2ODgwfQ.PAUZ-r4yBE2wAqPSoqJQuwvHwwnS1Bo41Aramb9Z-K4",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyOTU3MSwiZXhwIjoxNzM2MDMzMTcxfQ.qaCjtPdg98_rL70eNe0JIU0IzOjuVCWPhNS8qNBhOLM",
 									"type": "string"
 								}
 							]
@@ -92,7 +92,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"title\":\"Reminder for Bill Payments new\",\r\n    \"description\":\"Gas Bill Payment\",\r\n    \"content\":\"Gas bill is due on 10th Jan . \"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -122,7 +122,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAxNzQ0NywiZXhwIjoxNzM2MDIxMDQ3fQ.W7sDuSwWcuIndf_DWn3A_IXYRjqVT8MUg9H2LX6U_HQ",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyOTU3MSwiZXhwIjoxNzM2MDMzMTcxfQ.qaCjtPdg98_rL70eNe0JIU0IzOjuVCWPhNS8qNBhOLM",
 									"type": "string"
 								}
 							]
@@ -130,7 +130,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/v1/notes?page=1&limit=1",
+							"raw": "localhost:3000/api/v1/notes?page=1&limit=10",
 							"host": [
 								"localhost"
 							],
@@ -147,7 +147,7 @@
 								},
 								{
 									"key": "limit",
-									"value": "1"
+									"value": "10"
 								}
 							]
 						}
@@ -162,7 +162,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyMTg1NywiZXhwIjoxNzM2MDI1NDU3fQ.Z39giUBu0ZwKD8-wgPpwMXO0Xh3g7NmyPnLIkgeSpbc",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyOTU3MSwiZXhwIjoxNzM2MDMzMTcxfQ.qaCjtPdg98_rL70eNe0JIU0IzOjuVCWPhNS8qNBhOLM",
 									"type": "string"
 								}
 							]
@@ -170,7 +170,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/v1/notes/67797792558120a286e242da",
+							"raw": "localhost:3000/api/v1/notes/67797e41117185eedfd79219",
 							"host": [
 								"localhost"
 							],
@@ -179,7 +179,7 @@
 								"api",
 								"v1",
 								"notes",
-								"67797792558120a286e242da"
+								"67797e41117185eedfd79219"
 							]
 						}
 					},
@@ -193,7 +193,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyMTg1NywiZXhwIjoxNzM2MDI1NDU3fQ.Z39giUBu0ZwKD8-wgPpwMXO0Xh3g7NmyPnLIkgeSpbc",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyOTU3MSwiZXhwIjoxNzM2MDMzMTcxfQ.qaCjtPdg98_rL70eNe0JIU0IzOjuVCWPhNS8qNBhOLM",
 									"type": "string"
 								}
 							]
@@ -202,7 +202,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\":\"67797792558120a286e242da\",\r\n    \"title\":\"Reminder for Bill Payment\"\r\n}",
+							"raw": "{\r\n    \"id\":\"67797e41117185eedfd79219\",\r\n    \"title\":\"OLDD Reminder for Bill Payment\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -232,7 +232,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyMTg1NywiZXhwIjoxNzM2MDI1NDU3fQ.Z39giUBu0ZwKD8-wgPpwMXO0Xh3g7NmyPnLIkgeSpbc",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyOTU3MSwiZXhwIjoxNzM2MDMzMTcxfQ.qaCjtPdg98_rL70eNe0JIU0IzOjuVCWPhNS8qNBhOLM",
 									"type": "string"
 								}
 							]
@@ -241,7 +241,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\":\"67797792558120a286e242da\"\r\n}",
+							"raw": "{\r\n    \"id\":\"67797e41117185eedfd79219\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -271,7 +271,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyMTg1NywiZXhwIjoxNzM2MDI1NDU3fQ.Z39giUBu0ZwKD8-wgPpwMXO0Xh3g7NmyPnLIkgeSpbc",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyOTU3MSwiZXhwIjoxNzM2MDMzMTcxfQ.qaCjtPdg98_rL70eNe0JIU0IzOjuVCWPhNS8qNBhOLM",
 									"type": "string"
 								}
 							]
@@ -288,7 +288,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/v1/notes/67797e41117185eedfd79219/share",
+							"raw": "localhost:3000/api/v1/notes/6779b59e1ad3a9ce8a1043ed/share",
 							"host": [
 								"localhost"
 							],
@@ -297,7 +297,7 @@
 								"api",
 								"v1",
 								"notes",
-								"67797e41117185eedfd79219",
+								"6779b59e1ad3a9ce8a1043ed",
 								"share"
 							]
 						}
@@ -312,8 +312,44 @@
 				{
 					"name": "Search",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Nzk2MmNmODU2MzFjZWI0Y2QyYjFkYyIsImlhdCI6MTczNjAyOTU3MSwiZXhwIjoxNzM2MDMzMTcxfQ.qaCjtPdg98_rL70eNe0JIU0IzOjuVCWPhNS8qNBhOLM",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/search?q=bill&page=1&limit=1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "bill"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						}
 					},
 					"response": []
 				}

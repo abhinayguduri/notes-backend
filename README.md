@@ -77,10 +77,26 @@ To run unit tests:
 npm run test:unit
 ```
 ## End Points 
+-**Signup**
 
+    Endpoint: POST /api/v1/auth/signup
+    Fields:
+        firstname (string, required)
+        lastname (string, required)
+        email (string, required)
+        password(string, required)
+
+-**Signin**
+
+    Endpoint: POST /api/v1/auth/signin
+    Fields:
+        email (string, required)
+        password(string, required)
+        
 -**Create Note**
 
     Endpoint: POST /api/v1/notes
+    Bearer Token : required
     Fields:
         title (string, required)
         content (string, required)
@@ -89,6 +105,7 @@ npm run test:unit
 -**Get All Notes**
 
     Endpoint: GET /api/v1/notes
+    Bearer Token : required
     Query Parameters:
         page (number, optional, default: 1)
         limit (number, optional, default: 10)
@@ -96,10 +113,12 @@ npm run test:unit
 -**Get Note by ID**
 
     Endpoint: GET /api/v1/notes/:noteId
+    Bearer Token : required
 
 -**Update Note**
 
-    Endpoint: PATCH /api/v1/notes/
+    Endpoint: PUT /api/v1/notes/
+    Bearer Token : required
     Fields: (Partial updates allowed)
         id (noteId , required)
         title (string, optional)
@@ -109,12 +128,14 @@ npm run test:unit
 -**Delete Note**
 
     Endpoint: DELETE /api/v1/notes/
+    Bearer Token : required
     Feilds :
         id (noteId, required)
 
 -**Search Notes**
 
     Endpoint: GET /api/v1/notes/search
+    Bearer Token : required
     Query Parameters:
         q (string, required)
         page (number, optional, default: 1)
@@ -123,6 +144,7 @@ npm run test:unit
 -**Share Note**
 
     Endpoint: POST /api/v1/notes/:noteId/share
+    Bearer Token : required
     Fields:
         sharedWith (array of user IDs, required)
 
