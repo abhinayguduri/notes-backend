@@ -25,6 +25,7 @@ A robust and scalable Notes Management API that allows users to create, update, 
 - **jsonwebtoken**: For secure user authentication.
 - **express-validator**: For robust request validation.
 - **dotenv**: For managing environment variables.
+-**express-rate-limit**:For rate limiting
 
 ### Testing
 - **Jest**: Testing framework for unit tests.
@@ -40,10 +41,7 @@ A robust and scalable Notes Management API that allows users to create, update, 
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/notes-api.git
-   cd notes-api
+1. Clone the repository
 
 2. Install dependencies:
    ```bash
@@ -77,3 +75,50 @@ A robust and scalable Notes Management API that allows users to create, update, 
 To run unit tests:
 ```bash
 npm run test:unit
+
+
+## End Points
+Create Note
+
+    Endpoint: POST /api/v1/notes
+    Fields:
+        title (string, required)
+        content (string, required)
+        description (string, optional)
+
+Get All Notes
+
+    Endpoint: GET /api/v1/notes
+    Query Parameters:
+        page (number, optional, default: 1)
+        limit (number, optional, default: 10)
+
+Get Note by ID
+
+    Endpoint: GET /api/v1/notes/:noteId
+
+Update Note
+
+    Endpoint: PATCH /api/v1/notes/:noteId
+    Fields: (Partial updates allowed)
+        title (string, optional)
+        content (string, optional)
+        description (string, optional)
+
+Delete Note
+
+    Endpoint: DELETE /api/v1/notes/:noteId
+
+Search Notes
+
+    Endpoint: GET /api/v1/notes/search
+    Query Parameters:
+        q (string, required)
+        page (number, optional, default: 1)
+        limit (number, optional, default: 10)
+
+Share Note
+
+    Endpoint: POST /api/v1/notes/:noteId/share
+    Fields:
+        sharedWith (array of user IDs, required)
