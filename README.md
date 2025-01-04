@@ -79,7 +79,7 @@ A robust and scalable Notes Management API that allows users to create, update, 
 ### Unit Tests
 To run unit tests:
 ```bash
-npm run test:unit
+npm run test unit
 ```
 
 
